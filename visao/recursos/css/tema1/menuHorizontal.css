@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09/09/2013, 11:25:31
+    Author     : ebiro_2
+*/
+body{
+    margin: 0;
+}
+#menu_horizontal {
+        background: #D0C6A8;
+	width: 100%;
+	height: 52px;
+        float: left;
+        border-top: 1px solid white;
+}
+#menu_horizontal ul {
+	float: left;
+        margin: 0 auto;
+}
+#menu_horizontal ul li {
+	float: left;
+	position:relative;
+	font:16px Arial, Helvetica, sans-serif;
+	padding:0px;
+        width: 120px;
+        height: 50px;   
+        list-style: none;
+}
+#menu_horizontal ul li a{
+        color: black;
+        display: inline;
+        text-decoration:none;
+        padding:0;
+        margin: 0;
+        border-bottom:1px dotted #4c95ce;
+        width: 120px;
+        height: 35px;
+        position: absolute;
+        padding-top: 15px;
+        overflow: hidden;
+}
+#menu_horizontal li a:hover{
+    background: #00abf1;
+    color: white;
+}
+#menu_horizontal ul li:hover > ul {
+        display: block;
+}
+
+/* para dropdown*/
+.menu li{position:relative; float:left; }
+.menu li a{text-decoration:none;  display:block;}
+.menu li ul{
+    position: absolute;
+    top: 50px;
+    left: -40px;
+    display: none;
+}
+.menu li:hover ul, .menu li.over ul{display:block;}
+.menu li ul li{display:block; width:110px;}
+li.border0{border:0;}

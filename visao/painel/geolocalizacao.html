@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Papermashup.com | HTML5 Geo Location Using The Google Maps API</title>
+<link href="../style.css" rel="stylesheet" type="text/css" />
+
+<style>
+
+.success{
+	background-color:#6F9!important;
+	color:#000!important;
+	}
+
+#status{
+	padding:5px;
+	background-color:#000;
+	color:#fff;}	
+
+</style>
+</head>
+
+<body>
+
+<?php include '../includes/header.php';
+ $link = '| <a href="http://papermashup.com/html5-geo-location-using-the-google-api/">Back To Tutorial</a>';
+?>
+
+
+<section id="wrapper">
+
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <article>
+      <p><span id="status">Please wait whilst we try to locate you...</span></p>
+    </article>
+<script>
+function success(position) {
+  var s = document.querySelector('#status');
+  
+  if (s.className == 'success') {
+    return;
+  }
+  
+  s.innerHTML = "found you!";
+  s.className = 'success';
+  
+  var mapcanvas = document.createElement('div');
+  mapcanvas.id = 'mapcanvas';
+  mapcanvas.style.height = '400px';
+  mapcanvas.style.width = '560px';
+    
+  document.querySelector('article').appendChild(mapcanvas);
+  
+  var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  var myOptions = {
+    zoom: 15,
+    center: latlng,
+    mapTypeControl: false,
+    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
+  
+  var marker = new google.maps.Marker({
+      position: latlng, 
+      map: map, 
+      title:"You are here!"
+  });
+}
+
+function error(msg) {
+  var s = document.querySelector('#status');
+  s.innerHTML = typeof msg == 'string' ? msg : "failed";
+  s.className = 'fail';
+  
+  // console.log(arguments);
+}
+
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(success, error);
+} else {
+  error('not supported');
+}
+
+</script> 
+</section>
+
+
+<?php include '../includes/footer.php';?>
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/10/2013, 14:10:19
+    Author     : ebiro_2
+*/
+
+body{
+    font-family: arial;
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    border-top: 5px solid rgb(255, 109, 0);
+    width: 100%;
+}
+
+header .logo{
+    width: 300px;
+    height: 86px;
+    float: left;
+    margin-top: 8px;
+}
+
+header .relogio{
+    float: right;
+    height: 30px;
+}
+
+header a{
+    color: rgb(179, 179, 179); 
+}
+
+header #grupo{
+    width: 72%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+header #menuSuperior{
+    width: 480px;
+    height: 70px;
+    margin-top: 10px;
+    float: right;
+    margin-right: 30px;
+}
+
+header p{
+    margin: 0 auto;
+}
+
+header .amaior, header .amenor{
+    font-size: 12px;
+    float: left;
+    border: 1px solid rgb(219, 219, 219);
+    background: rgb(238, 238, 238);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
+
+header .amaior{
+    width: 225px;
+    height: 22px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;    
+}
+
+header .amenor{
+    width: 110px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 5px;    
+}
+header .amaior img, header .amenor img{
+    float: left;
+}
+
+header #categorias{
+    width: 100%;
+    background: rgb(255, 109, 0);
+}
+
+header #categorias div{
+    width: 72%;
+    margin: 0 auto;
+    font-size: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+header #categorias div a{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;   
+    text-transform: uppercase;
+}
+
+header #busca{
+    border-top: 2px solid white;
+    font-weight: bolder;
+    color: white;
+    background: rgb(255, 109, 0);
+    height: 35px;
+}
+
+header #busca .escuro{
+    background: rgb(189, 108, 55);
+    float: left;
+}
+header #busca .categorias, header #busca .hora{
+    margin-top: -35px;
+    height: 35px;
+    margin-left: -85px;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    color: white;
+}
+header #busca .hora{
+    width: 170px;
+    float: left;
+    font-size: 14px;
+    margin-top: -55px;
+    margin-left: 475px;
+}
+
+header #busca .hora .texto{
+    width: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    float: left;
+}
+
+header #busca #menusbusca{
+    height: 210px;
+    width: 770px;
+    display: inline-block;
+}
+
+header #busca #menusbusca a{
+    background: rgb(227, 227, 227);
+    color: rgb(40, 62, 99);
+    z-index: 10;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-left: 1px solid black;
+}
+
+header #busca div{
+    width: 72%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+header #busca form{
+    float: left;
+    margin-top: -50px;
+    margin-left: 110px;    
+}
+
+#barra{
+    background: rgb(227, 227, 227);
+    color: rgb(37, 63, 93);
+    height: 44px;
+    width: 100%;
+}
+
+#barra div{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;    
+}
+
+#barra div h4{
+    font-weight: bolder;
+    float: left;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+header #slideshow{
+    width: 100%;
+    height: 400px;
+    margin-top: -10px;
+}
+
+article{
+    margin-top: 5px;
+    height: 1000px;
+    width: 100%;
+}
+article .botao{
+    background: #CCC;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 4px;   
+    margin-left: 50px;
+}
+article #novidades{
+    background: rgb(227, 227, 227);
+    color: rgb(123, 123, 123);
+    width: 100%;
+    height: 38px;    
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+article #novidades div{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4px;
+}
+
+article #novidades .txtnovidades{
+    margin-top: 5px;
+    margin-left: 45px;
+    float: left;
+}
+
+article #novidades form{
+    width: 390px;
+    height: 30px;
+    float: left;
+    overflow: hidden;
+}
+
+article #novidades form input{
+    float: left;
+}
+
+article #quadro1, article #quadro2{
+    width: 74%;
+    height: 330px;
+    margin: 0 auto;
+}
+
+article #quadro2{
+    border-top: 1px solid #E5E3E3;
+}
+
+article #item{
+    font-size: 68.75%;
+    float: left;
+    width: 20%;
+    height: 270px;
+}
+
+article #item a{
+    color: rgb(176, 173, 166);
+}
+
+article #item .parcela{
+    color: rgb(75, 187, 227);
+}
+
+article #item .botao{
+    color: rgb(183, 183, 183);
+    padding: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(221, 221, 221)), to(rgb(249, 249, 249))) repeat-X;
+    background: -moz-linear-gradient(top, rgb(221, 221, 221), rgb(249, 249, 249)) repeat-X;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=rgb(221, 221, 221), endColorstr=rgb(249, 249, 249))";
+    border-radius: 5px;
+    width: 125px;
+    box-shadow: rgb(144, 148, 151) 2px 2px 1px;/**sombra para borda em css**/
+    font-weight: bolder;
+}
+
+article #item img{
+    width: 110px;
+    height: 120px;
+}
+
+article #item #informacoesItem{
+    width: 100%;
+    height: 56px;
+    margin: 0 auto;
+}
+
+article #item .preconovo{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+article #item .precovelho{
+    text-decoration: line-through;
+}
+article form label{
+    width: 140px;
+    display: block;
+    float: left;
+}
+footer #rodape1{
+    color: white;
+    background: rgb(255, 109, 0);
+    width: 100%;
+    height: 255px;
+    font-size: 12px;
+}
+
+footer #rodape1 h4{
+    font-size: 14px;
+}
+
+footer #rodape1 #grupos, footer #rodape2 #grupos2{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+}
+
+footer #rodape1 #grupos div{
+    float: left;
+    border-left: 2px solid white;
+    width: 20%;
+    height: 220px;
+    padding-left: 5px;
+}
+
+footer #rodape1 #grupos div a{
+    color: white;
+}
+
+#redesocial{
+    font-style: italic;
+    width: 15%;
+    float: left;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+#redesocial #twitter, #redesocial .fb-like{
+    margin-right: 6px;
+}
+
+#redesocial img{
+    width: 15px;
+    height: 15px;
+}
+
+footer #rodape2{
+    border-bottom: 2px solid rgb(255, 109, 0);
+    color: rgb(117, 117, 119);
+    width: 100%;
+}
+
+footer #rodape2 img{
+    margin-left: 4px;
+}
+
+.imgFormaPagamento{
+    width: 60px;
+}
+
+footer #rodape2 #grupos2 div{
+    float: left;
+    width: 33%;
+}
+
+footer #rodape2 #grupos2 div.texto2{
+    font-style: italic;
+}
+
+footer #rodape2 #grupos2{
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+footer #rodape2 h4{
+    color: rgb(255, 109, 0);
+    margin: 0;
+}

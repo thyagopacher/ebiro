@@ -1,0 +1,72 @@
+#Adjust default time zone 
+SetEnv TZ America/Sao_Paulo
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^painel/?$ visao/painel [NC,L]
+    RewriteRule ^admin/?$ visao/painel [NC,L]
+    RewriteRule ^Localizacao/?$ visao/Localizacao.php [NC,L]
+    RewriteRule ^Empresa/?$ visao/Conteudo.php?page=QuemSomos [NC,L]
+    RewriteRule ^Quem_somos/?$ visao/Conteudo.php?page=QuemSomos [NC,L]
+
+    RewriteRule ^Contato/?$ visao/Contato.php [NC,L]
+    RewriteRule ^Departamentos/?$ visao/Departamentos.php [NC,L]
+    RewriteRule ^Entrar/?$ visao/Entrar.php [NC,L]
+    RewriteRule ^Trabalhe_conosco/?$ visao/TrabalheConosco.php [NC,L]
+    RewriteRule ^Categoria/?$ visao/Categoria.php [NC,L]
+    #url para perguntas
+     RewriteRule ^Ajuda/?$ visao/Ajuda.php [NC,L]
+    RewriteRule ^Ajuda/([0-9]+)/?$ visao/Ajuda.php?codpergunta=$1[NC,L]
+    #url para planos
+    RewriteRule ^Plano/?$ visao/Plano.php [NC,L]
+    RewriteRule ^Plano/([0-9]+)/?$ visao/Plano.php?codplano=$1[NC,L]
+</IfModule>  
+
+#não deixa que outros sites utilizem links para nossas imagens
+RewriteCond %{HTTP_REFERER} !^http://ebiro.com.br/novo.*$ [NC] 
+RewriteCond %{HTTP_REFERER} !^http://www.ebiro.com.br/novo.*$ [NC] 
+RewriteRule .*.(jpg|jpeg|gif|png|bmp)$ – [F,NC]
+ 
+#proibindo listagem de diretório
+IndexIgnore *.wmv *.jpg *.gif *.swf
+
+### Otimizacao de cache e compressao ###
+### Nao Remover ###
+<IfModule mod_expires.c>
+ExpiresActive On
+#ExpiresDefault "access plus 1 month"
+#ExpiresByType application/javascript "access plus 2 month"
+#ExpiresByType application/x-javascript "access plus 2 month"
+#ExpiresByType text/javascript A900
+#ExpiresByType text/html A90
+#ExpiresByType text/xml A90
+#ExpiresByType text/css A900
+#ExpiresByType text/plain A62
+ExpiresByType image/gif "access plus 2 month"
+ExpiresByType image/jpg "access plus 2 month"
+ExpiresByType image/jpeg "access plus 2 month"
+ExpiresByType image/png "access plus 2 month"
+ExpiresByType image/bmp "access plus 2 month"
+#ExpiresByType application/x-shockwave-flash A3600
+#ExpiresByType font/truetype "access plus 2 month"
+#ExpiresByType font/opentype "access plus 2 month"
+#ExpiresByType application/x-font-woff   "access plus 2 month"
+ExpiresByType image/svg+xml "access plus 2 month"
+#ExpiresByType application/vnd.ms-fontobject "access plus 2 month"
+</IfModule>
+
+###Compacta css###
+<Files *.css>
+SetOutputFilter DEFLATE
+</Files>
+
+###Compacta javascript###
+<Files *.js>
+SetOutputFilter DEFLATE
+</Files>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/x-javascript application/x-httpd-php application/rss+xml application/atom_xml
+</IfModule>
+
+### fim das otimizacoes ###

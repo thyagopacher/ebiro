@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/09/2013, 10:12:25
+    Author     : ebiro_2
+*/
+
+#conteudo ul{
+	list-style:none;
+	float:left;
+	margin-left:-40px;
+	margin-top:-5px;
+}
+#conteudo ul li{
+	width:150px;
+	height:150px;
+	background-color:#CCC;
+	border:1px solid #999;
+	border-radius:4px;
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+}
+#conteudo ul li a{
+	text-decoration:none;
+}
+#conteudo ul li a span{
+    margin-left: 25%;
+}

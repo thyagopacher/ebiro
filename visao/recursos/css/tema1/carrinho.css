@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/10/2013, 14:30:01
+    Author     : ebiro_2
+*/
+
+#carrinho{
+    background: rgb(227, 227, 227);
+    color: rgb(37, 63, 93);
+    height: 44px;
+    width: 100%;
+}
+
+#carrinho div{
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bolder;
+    padding-top: 10px;    
+}
+
+article div{
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+#lateralEsquerda{
+    float: left;
+    width: 145px;
+    background: rgb(227, 227, 227);
+    color: rgb(37, 63, 93);
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;    
+    height: 100%;
+}
+
+#lateralEsquerda a{
+    color: rgb(37, 63, 93);
+}
+
+#lateralEsquerda div{
+    background: rgb(37, 63, 93);
+    color: white;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 12px;
+    text-align: center;    
+}
+
+.produtos{
+    padding-top: 20px;
+    box-shadow: rgb(224, 224, 244) 2px 0px 1px;/**sombra para borda em css**/
+}
+
+.produtos thead{
+    background: rgb(255, 109, 0);
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.produtos input{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#informacoes{
+    font-size: 12px;
+    color: rgb(38, 62, 96);
+    background: rgb(227, 227, 227);
+    width: 647px;
+    padding-top: 5px;
+}
+
+#informacoes h4{
+    height: 10px;
+    width: 180px;
+    float: left;
+}

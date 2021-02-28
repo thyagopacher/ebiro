@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/10/2013, 14:00:08
+    Author     : Ebiro
+*/
+
+body{
+    margin: 0 auto;
+    font-family: arial;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, right top, right bottom, from(#ADD1CE), to(#92A7B4));/*Para Chrome*/
+    background: -moz-linear-gradient(top, #ADD1CE, #92A7B4) repeat-y;/*Firefox*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ADD1CE, endColorstr=#92A7B4)";/*IE8*/
+}
+header{
+    height: 150px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h4{
+    background: #E9E1CA;
+    width: 422px;
+    height: 100px;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid gray;
+}
+h4 img{
+    width: 270px;
+    height: 90px;
+}
+form{
+    margin-bottom: 15%;
+}
+#loginform{
+    background: #F5EFDA;
+    border-radius: 0px 0px 5px 5px;
+    width: 422px;
+    margin: 0 auto;
+    margin-top: -23px;
+    border: 1px solid gray;
+    color: #86847F;
+}
+#loginform p{
+    width: 215px;
+}
+#loginform label{
+    text-align: left;
+}
+#loginform input[type='image']{
+    background: #039EE7;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(140, 194, 240);
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+}

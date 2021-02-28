@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09/09/2013, 11:25:31
+    Author     : ebiro_2
+*/
+
+#menu_lateral {
+	display:table;
+	width: auto;
+        float: left;
+}
+#menu_lateral img{
+	float:right;
+}
+#menu_lateral ul {
+        list-style:none;
+        margin:0;
+        padding:5px;
+        width:139px;
+        background:#3e82b9 repeat-x bottom;
+        border:1px solid #2a679e;
+}
+#menu_lateral ul li {
+        position:relative;font:11px Arial, Helvetica, sans-serif;padding:0 0 0 18px;z-index: 100;
+}
+#menu_lateral ul li a{
+        color:#FFFFFF;
+        display:block;
+        text-decoration:none;
+        padding:5px 0;
+        border-bottom:1px dotted #4c95ce;
+}
+#menu_lateral ul li a:hover{
+        text-decoration:underline;
+}
+#menu_lateral ul li:hover > ul {
+        display: block;
+}
+#menu_lateral ul li > ul {
+        display:none;
+        position:absolute;
+        list-style:none;
+        margin:0;
+        padding:5px;
+        top:0;
+        left:135px;
+        z-index:1;
+}
+#menu_lateral ul li li {
+        display:block;
+        float:none;
+        background:none;
+        padding:0;
+        margin-left: -5px;
+}
+#menu_lateral ul li ul li a{
+        display:block;
+        text-align:left;
+        padding:5px;
+}
+#menu_lateral ul li ul li:hover > ul{
+        display: block;
+}
+#menu_lateral ul li ul li > ul {
+        display:none;
+        position:absolute;
+        list-style:none;
+        margin:0;
+        padding:5px;
+        top:0;
+        left:140px;
+}

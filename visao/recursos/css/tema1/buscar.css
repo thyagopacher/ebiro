@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/10/2013, 16:56:42
+    Author     : ebiro_2
+*/
+article{
+    margin-top: 0px;
+}
+
+#lateralEsquerda{
+    float: left;
+    width: 145px;
+    background: rgb(227, 227, 227);
+    color: rgb(37, 63, 93);
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: left;    
+    height: 100%;
+    padding-left: 5px;
+}
+
+#lateralEsquerda h4{
+    color: white;
+    background: rgb(38, 62, 96);
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#lateralEsquerda a{
+    color: rgb(37, 63, 93);
+    text-transform: capitalize;
+}
+
+#lateralEsquerda div{
+    background: rgb(37, 63, 93);
+    color: white;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 12px;
+    text-align: center;    
+}
+
+#resultado{
+    height: 90px;
+    width: 87%;
+    float: left;
+}
+
+.tituloRes{
+    height: 20px;
+    width: 155px;
+}

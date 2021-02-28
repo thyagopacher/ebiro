@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/10/2013, 09:46:46
+    Author     : Ebiro
+*/
+
+.endereco{
+    float: left;
+    width: 228px;
+    margin-left: -485px;
+}
+
+#mapa { 
+    width: 640px;
+    height: 200px;
+    border: 1px solid #FF6D00;
+    margin: 10px 90px 20px 0px;
+    float: right;
+}
+
+h4{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+#localizacoes{
+    background: #CFCDC9;
+    width: 400px;
+    min-height: 200px;
+    margin: 10px 0px 20px 90px;
+    float: left;
+}
+
+#localizacoes h5{
+    margin: 0 auto;
+    font-size: 14px;
+    width: 280px;
+    height: 16px;
+    margin-top: 10px;
+}
+
+#localizacoes, #localizacoes a{
+    color: #4C4C4C;
+}
+
+#localizacoes a{
+    margin-left: 5px;
+}

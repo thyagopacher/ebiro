@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/09/2013, 10:20:38
+    Author     : ebiro_2
+*/
+
+body{
+    font-family: arial;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#topo{
+    width: 100%;
+    height: 150px;
+    background: white;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    margin-bottom: 1%;
+}
+
+#topo #logo{
+    width: 20%;
+    float: left;
+    padding: 5px;
+}
+
+#infEmpresa{
+    width: 20%;
+    float: right;
+}
+
+#ladoEsquerdo{
+    float: left;
+    width: 15%;
+}
+
+.botao{
+    background: rgb(168, 160, 59);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#barraBusca{
+    width: 100%;
+    position: fixed;
+    z-index: 10;    
+    margin-top: -54px;
+}
+
+#barraBusca form{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 600px;
+}
+
+#conteudo{
+    width: 70%;
+    margin: 0 auto;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    min-height: 380px;
+}
+
+#conteudo .tituloRes{
+    font: 68.75%/1.2 arial, freesans, garuda, helvetica, verdana, sans-serif;
+    font-size: 15px;
+    color: #666;
+    width: 33%;
+    font-weight: bolder;
+    float: left;
+    margin-top: 5px;
+}
+
+#conteudo #resultado{
+    background: #f0f0f0;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #e3e0e2;
+}
+
+#conteudo #ordenacao{
+    float: right;
+    font-size: 1em;
+    margin-top: -12px;
+}
+
+#conteudo label{
+    display: block;
+    float: left;
+    width: 130px;
+}
+
+#conteudo #item{
+    font-size: 68.75%;
+    float: left;
+    width: 33%;
+    height: 300px;
+}
+
+#conteudo #item img{
+    width: 150px;
+    height: 180px;
+}
+
+#conteudo #item #informacoesItem{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#conteudo #item .preconovo{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#conteudo #item .precovelho{
+    text-decoration: line-through;
+}
+
+#rodape{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 300px;
+    background: #FF8000;
+    overflow: auto;
+}
+
+#rodape #menus{
+    padding: 2px;
+    float: left;
+    width: 33%;
+    margin-left: 1%;
+}
+
+#rodape #rodape_central{
+    padding: 2px;
+    float: left;
+    width: 32%;
+}
+
+#rodape #infEmpresa{
+    float: right;
+    width: 33%;
+}
+
+#rodape #desenvolvedor{
+    margin-left: 10%;
+    margin-top: 5%;
+    padding-top:5px;
+    width:100%;
+    margin-left:25%;
+    margin-right:25%;
+}
+#rodape #desenvolvedor{
+    bottom: 0px;position: absolute;width: 90%;margin:auto 0px;
+}

@@ -1,0 +1,185 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/09/2013, 11:07:40
+    Author     : ebiro_2
+*/
+body{
+    background: #F5EFDA;
+    font-family: arial;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 135px;
+}
+
+#topo{
+    height: 85px;
+}
+#topo #conexaosegura{
+    background: #BFCBC6;
+    width: 100%;
+    height: 20px;
+    color: white;
+}
+#topo #conexaosegura div{
+    width: 57.5%;
+}
+#topo #conexaosegura img, #topo #conexaosegura span{
+    float: right;
+}
+#topo #conexaosegura div{
+    font-family: arial;
+    font-size: 12px;
+    width: 58%;
+    height: 20px;  
+}
+#menu_lateral{
+    margin-left: 10px;
+    float: left;
+    width: 10%;
+}
+article{
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+}
+article a{
+    text-decoration: none;
+    color: black;
+}
+article #conteudo .BemVindo{
+    float: left;
+}
+article #conteudo .BemVindo a{
+    text-decoration: none;
+    color: black;
+}
+article #conteudo{
+    background: white;
+    float: left;
+    min-height: 200px;
+    width: 55%;
+    margin-right: 34%;
+    overflow-y: hidden;
+}
+article label{
+    width: 140px;
+    display: block;
+    float: left;
+}
+article .login{
+    width: 25%;
+    margin: 0 auto;
+}
+
+/*Quadros página principal*/
+article ul.quadros{
+	list-style:none;
+	float:left;
+	margin-top: 20px;
+        width: 575px;
+}
+article ul.quadros li{
+        width: 160px;
+        height: 90px;
+	background: #F3EAD5;
+	border:1px solid #BFCBC6;
+	border-radius:4px;
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+}
+article ul.quadros li:hover{
+    background: -webkit-gradient(linear, left top, left bottom, from(#91BDE0), to(#B0CBCF)) repeat-X;/*Para Chrome*/
+    background: -moz-linear-gradient(top, #91BDE0, #B0CBCF) repeat-X;/*Firefox*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#91BDE0, endColorstr=#B0CBCF)";/*IE8*/    
+}
+article ul.quadros li a{
+	text-decoration:none;
+        color: black;
+}
+article ul.quadros li img{
+    margin-right: 45%;
+    margin-left: 45%;
+    margin-top: 25px;
+}
+article ul.quadros li div{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+article #erro{
+    background: red;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+article .logomini{
+    width: 20px;
+    height: 20px;
+}
+article .botao{
+    background: #CCC;
+    color: black;
+    border: 1px solid black;
+}
+article .btexcluir{
+    background: red;
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+article #menus{
+    width: 100%;
+    overflow: hidden;    
+}
+article #menus p{
+    float: left;
+    width: 115px;
+    height: 55px;
+    text-align: center;
+}
+article #menus input{
+    float: left;
+}
+
+article table thead{
+    background: #E8E8E6;
+}
+article table{
+    border: 1px solid #777777;
+}
+article table td, article table th{
+    border-bottom: 1px solid #777777;
+}
+input[type='submit']{
+    padding: 15px;
+    font-weight: bolder;
+    border: 1px solid black;    
+}
+footer{
+    height: 20px;
+    width: 100%;
+    background: #BFCBC6;
+    color: white;
+    padding-top:5px;
+    padding-bottom: 5px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}

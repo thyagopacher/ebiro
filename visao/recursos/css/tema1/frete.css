@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/10/2013, 16:49:56
+    Author     : Ebiro
+*/
+
+fieldset{
+    width: 50%;
+}
+
+label{
+    float: left;
+    width: 150px;
+}
